@@ -1,0 +1,13 @@
+# @format
+
+type Item {
+  id: Int
+  name: String
+  numItems: String
+  time: String
+}
+
+extend type Query {
+  item: Item!
+  items: [Items!]!
+}

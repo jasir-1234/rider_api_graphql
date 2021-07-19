@@ -1,0 +1,26 @@
+# @format
+
+
+type Query {
+    product: [Product!]! @all(model: "App\\Product")
+    product(id: ID @eq): Product @find(model: "App\\Product")
+}
+
+type Mutation{
+   createProduct(
+      name:String
+      numItems:String
+      time:String
+   ): Product @create(model: "App\\Product")
+}
+
+
+type Product{
+   id: ID!
+   name: String!
+   numItems:String!
+   time:String!
+   created_at: DateTime!
+   updated_at: DateTime!
+
+}

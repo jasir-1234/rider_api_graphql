@@ -1,0 +1,25 @@
+# @format
+
+type Outlet {
+  id: Int
+  maximum_order_days: Int
+  opening_time: String
+  closing_time: String
+  name: String
+  phone: String
+  address: String
+  url: String
+  latitude: Float
+  longitude: Float
+  delivery_charge_by_km: Float
+  free_delivery_km: Float
+  maximum_delivery_km: Float
+  default_delivery_time_in_minuts: Float
+  delivery_area_exceed_message: String
+  image: Image
+}
+
+extend type Query {
+  outlet: Outlet!
+  outlets: [Outlet!]!
+}

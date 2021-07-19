@@ -1,0 +1,11 @@
+# # @format
+
+# type About {
+#   info: String!
+#   image: Image!
+# }
+
+# extend type Query {
+#   aboutUs: About!
+#   terms: String
+# }

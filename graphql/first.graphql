@@ -1,0 +1,11 @@
+# @format
+
+type First {
+  alert: String!
+  image: Image!
+}
+
+extend type Query {
+  firstUs: First!
+  termsFirst: String
+}

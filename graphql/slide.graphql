@@ -1,0 +1,9 @@
+# @format
+
+type Slide {
+  image: Image! @method(name: "getSlideGQLImage")
+}
+
+extend type Query {
+  slides: [Slide!]! @all(scopes: ["byLatest"])
+}
